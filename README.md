@@ -1,4 +1,5 @@
-*INVENTARIO DE TIENDA* /n
+*INVENTARIO DE TIENDA* 
+
 inicio del programa:
 -Matriz de 10 filas y 3 columnas, las columnas tendrán el sigueinte identificador:
 [0] = identificador.
