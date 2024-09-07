@@ -15,5 +15,16 @@ cuenta con un menú interactivo que tiene 4 opciones:
 5. Salir
 
 Metodos:
-agregarProductos(int idProducto, int cantidad): toma como parametro de enteros la columna [0] y la [2], hace busqueda en la columna[0] de la matriz a traves del identificador entregado por el usuario y si coincide con alguna de las filas de la columna[0], permite sumar algún entero entregado por el usuario a la cantidad correspondiente
+-agregarProductos(int idProducto, int cantidad): toma como parametro de enteros la columna [0] y la [2], hace busqueda en la columna[0] de la matriz a traves del identificador entregado por el usuario y si coincide con alguna de las filas de la columna[0], permite sumar algún entero entregado por el usuario a la cantidad correspondiente a ese indentificador. No retorna nada, así que se haría uso de un retorno void.
+
+-restarProductos(int idProducto, int cantidad): realizaría una función parecida al metodo agregarProductos, solo que debería poder restar cantidades mediante un entero entregado por el usuario, en este metodo si el entero entregado es mayor que la cantidad que se quiere restar, no deberia permitirle al usuario realizar esta acción. Ya que, no pueden haber cantidades negativas. Hace uso de un retorno void.
+
+-consultarDisponibilidad(int idProducto): Tiene que hacer busqueda mediante el idProducto entregado por el usario y entregar la cantidad del idProducto buscado por el usuario. Retorna el entero asociado a la cantidad del idProducto.
+
+-listarProductos(): Imprime toda la matriz con todos sus contenidos ignorando los espacios vacios.
+
+Cada operación debe manejar los errores usando try-catch.
+
+Pruebas unitarias:
+Validar que los errores (intentos inválidos de agregar/restar, identificadores incorrectos, etc.) sean manejados correctamente con las excepciones correspondientes.
 
