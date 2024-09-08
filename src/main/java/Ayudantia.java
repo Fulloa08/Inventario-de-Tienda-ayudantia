@@ -113,6 +113,7 @@ public class Ayudantia {
         }
     }
 
+
     public static void listarProductos(String productos[][]) {
         for (int i = 0; i < productos.length; i++) {
             if (productos[i][0] != null) {

@@ -52,6 +52,7 @@ class AyudantiaTest {
     }
 
 
+
     @Test
     void testListarProductos() {
         String output = getSystemOutput(() -> ayudantia.listarProductos(productos));
