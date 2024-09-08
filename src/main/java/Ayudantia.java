@@ -100,13 +100,17 @@ public class Ayudantia {
     }
 
     public static void consultarDisponibilidad(String productos[][], String idProducto) {
+        boolean encontrado = false;
         for (int i = 0; i < productos.length; i++) {
-            if ( productos[i][0].equals(idProducto) && productos[i][0] != null) {
-                System.out.println("La cantidad del Producto "+ idProducto + "es de: " + productos[i][2]);
+            if (productos[i][0] != null && productos[i][0].equals(idProducto)) {
+                System.out.println("La cantidad del Producto "+ idProducto + " es de: " + productos[i][2]);
+                encontrado = true;
+                break;
             }
         }
-
-
+        if (!encontrado) {
+            System.out.println("Producto con ID " + idProducto + " no encontrado.");
+        }
     }
 
     public static void listarProductos(String productos[][]) {
